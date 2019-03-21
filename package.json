@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "serve:dev": "webpack-dev-server --config client/webpack.config.js",
+    "serve:prod": "webpack --cofnig client/webpack.config.js && node client/server.js",
+    "start": "npm run serve:dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

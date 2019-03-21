@@ -1,5 +1,6 @@
 import React from 'react';
 import './app.scss';
+import TicTacToe from '@/tic-tac-toe/tic-tac-toe';
 
 class App extends React.Component {
     constructor() {
@@ -10,7 +11,7 @@ class App extends React.Component {
         return (
             <div className="app">
                 <main>
-                    App
+                    <TicTacToe/>
                 </main>
             </div>
         );
