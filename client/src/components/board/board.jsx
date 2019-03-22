@@ -19,7 +19,7 @@ const Board = ({board, width, height, boxTemplate, onBoxClick}) => {
                         },
                         [i, j],
                     );
-                    return <Box key={i + j} className={boxClass} width={width / row.length} height={height / board.length} row={i} column={j} onClick={memoizedBoxClickCallback}>
+                    return <Box key={i + j} className={boxClass} width={width / row.length} height={height / board.length} onClick={memoizedBoxClickCallback}>
                         {boxTemplate(i, j)}
                     </Box>;
                 })}
