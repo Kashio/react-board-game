@@ -1,14 +1,12 @@
 import React from 'react';
 import './score-list.scss';
+import Score from '@/score/score';
 
 class ScoreList extends React.PureComponent {
     render() {
         const {players, width, height} = this.props;
         return <div className="scores" style={{width, height}}>
-            {players.map((player, i) => <div key={i}>
-                <span className="player-name">Player{i + 1} - </span>
-                <span className="player-score">{player.score}</span>
-            </div>)}
+            {players.map((player, i) => <Score key={i} index={i} score={player.score}/>)}
         </div>;
     }
 }

@@ -4,7 +4,6 @@ import Box from '@/box/box';
 import classNames from 'classnames';
 
 const Board = ({board, width, height, boxTemplate, onBoxClick}) => {
-
     return <div className="board" style={{width, height}}>
         {board.map((row, i) => <div key={i} className="row" style={{height: height / board.length}}>
                 {row.map((column, j) => {
